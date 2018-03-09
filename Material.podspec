@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
 	s.authors = { 'CosmicMind, Inc.' => 'support@cosmicmind.com' }
 	s.static_framework = true
  	s.source = { :git => 'https://github.com/CosmicMind/Material.git', :tag => s.version }
-
+	
 	s.default_subspec = 'Core'
 	s.platform = :ios, '8.0'
 
@@ -20,7 +20,6 @@ Pod::Spec.new do |s|
 			'com.cosmicmind.material.icons' => ['Sources/**/*.xcassets'],
 			'com.cosmicmind.material.fonts' => ['Sources/**/*.ttf']
 		}
-
-		s.dependency 'Motion', :git => 'https://github.com/joseantonioECI/Motion.git'
 	end
+	s.dependency 'Motion', :git => 'https://github.com/joseantonioECI/Motion.git'
 end
