@@ -15,13 +15,12 @@ Pod::Spec.new do |s|
 	s.subspec 'Core' do |s|
 		s.ios.deployment_target = '8.0'
 		s.ios.source_files = 'Sources/**/*.swift'
-		s.static_framework = true
 		s.requires_arc = true
 		s.resource_bundles = {
 			'com.cosmicmind.material.icons' => ['Sources/**/*.xcassets'],
 			'com.cosmicmind.material.fonts' => ['Sources/**/*.ttf']
 		}
 
-		s.dependency 'Motion', '~> 1.3.0'
+		s.dependency 'Motion', :git => 'https://github.com/joseantonioECI/Material.git'
 	end
 end
