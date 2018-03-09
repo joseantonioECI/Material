@@ -21,6 +21,6 @@ Pod::Spec.new do |s|
 			'com.cosmicmind.material.fonts' => ['Sources/**/*.ttf']
 		}
 
-		s.dependency 'Motion', :git => 'https://github.com/joseantonioECI/Material.git'
+		s.dependency 'Motion', :git => 'https://github.com/joseantonioECI/Motion.git'
 	end
 end
