@@ -20,6 +20,6 @@ Pod::Spec.new do |s|
 			'com.cosmicmind.material.icons' => ['Sources/**/*.xcassets'],
 			'com.cosmicmind.material.fonts' => ['Sources/**/*.ttf']
 		}
+		s.dependency 'Motion', '~> 1.3.0'
 	end
-	s.dependency 'Motion', :git => 'https://github.com/joseantonioECI/Motion.git'
 end
